@@ -1,0 +1,25 @@
+{
+	"name": "Bark Python Package",
+	"dockerComposeFile": [
+		"docker-compose.yml",
+		"docker-compose.override.yml"
+	],
+	"service": "bark",
+	"workspaceFolder": "/workspaces/bark",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+		"ghcr.io/devcontainers-contrib/features/black:2": {},
+		"ghcr.io/devcontainers-contrib/features/flake8:2": {},
+		"ghcr.io/devcontainers-contrib/features/isort:2": {}
+	},
+	"initializeCommand": "bash .devcontainer/scripts/initialize.sh",
+	"postStartCommand": "bash .devcontainer/scripts/post-start.sh"
+}

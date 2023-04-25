@@ -1,1 +1,11 @@
+# python cache
 __pycache__/
+
+# bark package build files
+build
+dist
+suno_bark.egg-info
+
+# user specific configurations
+.vscode
+.devcontainer/docker-compose.override.yml

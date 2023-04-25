@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  bark:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      target: main
+    command: sleep infinity
+    volumes:
+      - ..:/workspaces/bark:cached
