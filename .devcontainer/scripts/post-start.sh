@@ -8,5 +8,5 @@ echo
 if [[ ! -d build ]]; then
     # install the bark python package, and its dependencies
     pip install --upgrade pip
-    sudo pip install .
+    sudo pip install -e .
 fi 
