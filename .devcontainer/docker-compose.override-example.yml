@@ -1,22 +1,17 @@
 version: "3"
 
-# Uncomment this
 # services:
-# Uncomment the following block to enable home folder persistence
-#   ultralytics-tryout:
+# Uncomment the following block to enable gpu support
+# bark:
+#   deploy:
+#     resources:
+#       reservations:
+#         devices:
+#           - driver: nvidia
+#             count: 1
+#             capabilities: [gpu]
 #     volumes:
 #       - home:${HOME_FOLDER-/home/vscode}"
-# Uncomment the following block to enable gpu support
-  # ultralytics-tryout:
-  #   deploy:
-  #     resources:
-  #       reservations:
-  #         devices:
-  #           - driver: nvidia
-  #             count: 1
-  #             capabilities: [gpu]
-     
-
 # Uncomment the following block to enable home folder persistence
 # volumes:
 #   home:
